@@ -354,6 +354,7 @@ let
         # The other responsibilities of NPM are kept -- version checks, build
         # steps, postprocessing etc.
 
+        export PUPPETEER_SKIP_DOWNLOAD=true
         export HOME=$TMPDIR
         cd "${packageName}"
         runHook preRebuild
